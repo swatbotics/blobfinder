@@ -1,0 +1,8 @@
+<!-- -*- mode: xml -*- -->
+<launch>
+
+  <remap from="image" to="/camera/rgb/image_raw" />
+
+  <node name="colorpicker" pkg="blobfinder" type="colorpicker" cwd="ROS_HOME" />
+
+</launch>
