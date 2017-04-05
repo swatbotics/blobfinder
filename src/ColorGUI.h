@@ -10,11 +10,13 @@
 
 #include <deque>
 
-#include <ros/ros.h>
-
 #include "ColorLUT.h"
 
+#ifndef Q_MOC_RUN
+#include <ros/ros.h>
 #include <sensor_msgs/Image.h>
+#endif
+
 
 class ColorGUI: public QMainWindow {
 

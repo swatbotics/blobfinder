@@ -12,8 +12,10 @@
 #include <QFileDialog>
 #include <QCloseEvent>
 
+#ifndef Q_MOC_RUN
 #include <sensor_msgs/image_encodings.h>
 #include <cv_bridge/cv_bridge.h>
+#endif
 
 
 
