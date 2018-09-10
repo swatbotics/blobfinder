@@ -22,8 +22,7 @@ class blobtest:
     # each such member variable is referred to with "self."
 
     def __init__(self, name):
-
-        # Subscribe to joystick messages to get button pushes
+        # Subscribe to blob messages to learn about blobs
         rospy.Subscriber('/blobfinder/blue_tape/blobs', 
                          MultiBlobInfo, self.blob_callback)
 
