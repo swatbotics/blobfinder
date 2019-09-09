@@ -85,7 +85,7 @@ ColorGUI::ColorGUI(ros::NodeHandle& n): nh(n) {
   QLabel* l1 = new QLabel("Y radius: ");
   yRangeSpin = new QSpinBox();
   yRangeSpin->setRange(0, (1 << ColorLUT::ybits));
-  yRangeSpin->setValue(2);
+  yRangeSpin->setValue(1);
 
   QLabel* l2 = new QLabel("Cr/Cb radius: ");
   cRangeSpin = new QSpinBox();
@@ -95,7 +95,7 @@ ColorGUI::ColorGUI(ros::NodeHandle& n): nh(n) {
   QLabel* l3 = new QLabel("Opening: ");
   openSizeSpin = new QSpinBox();
   openSizeSpin->setRange(0, 5);
-  openSizeSpin->setValue(2);
+  openSizeSpin->setValue(1);
 
   liveCheck = new QCheckBox("Live feed");
   liveCheck->setChecked(true);
