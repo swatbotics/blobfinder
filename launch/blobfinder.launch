@@ -9,7 +9,7 @@
      to generate one.
     -->
   <param name="/blobfinder/datafile" type="string" 
-	 value="$(find blobfinder)/data/kinect.data" />
+	 value="$(find blobfinder)/data/$(env TURTLEBOT_3D_SENSOR).data" />
 
   <!-- 
      Set the "to" attribute here to whatever image you would
